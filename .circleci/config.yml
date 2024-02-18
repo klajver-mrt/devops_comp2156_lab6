@@ -1,17 +1,17 @@
 verrsion: 2.1
 
 jobs:
-    run_install:
-      docker:
-        -image: circle/node:10
-      steps:
-        -checkout
-        -run:
-          name: Install dependences
-          command: npm install 
-        -run:
-          name: Install yarn
-          command: npm install -g yarn
+  run_install:
+    docker:
+      -image: circle/node:10
+    steps:
+      -checkout
+      -run:
+        name: Install dependences
+        command: npm install 
+      -run:
+        name: Install yarn
+        command: npm install -g yarn
 
 workflow:
   install:
