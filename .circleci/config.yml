@@ -7,8 +7,10 @@ jobs:
       steps:
         -checkout
         -run:
+          name: Install dependences
           command: npm install 
         -run:
+          name: Install yarn
           command: npm install -g yarn
 
 workflow:
