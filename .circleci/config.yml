@@ -1,0 +1,18 @@
+verrsion: 2.1
+
+jobs:
+    run_install:
+      docker:
+        -image: circle/node:10
+      steps:
+        -checkout
+        -run:
+          command: npm install 
+        -run:
+          command: npm install -g yarn
+
+workflow:
+  install:
+    jobs:
+     -run_install
+          
